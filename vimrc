@@ -1,9 +1,6 @@
 set nocompatible    "VIM no vi
 filetype off        "Required for vundle
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 
 syntax on
 
@@ -12,7 +9,6 @@ syntax on
 "
 
 set rtp+=~/.vim/bundle/vundle
-" set rtp+=~/Dropbox/dotfiles/vim/bundle/vundle
 call vundle#rc()
 
 " Let Vundle manage Vundle (recuired)
@@ -25,6 +21,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 " Bundle 'wincent/Command-T'
+Bundle 'git://git.wincent.com/command-t.git'
 " TODO: Finish installing command-t... maybe need to try pathogen
 " TODO: Install snipMate
 " TODO: Get ctags working...
