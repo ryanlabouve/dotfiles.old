@@ -16,13 +16,13 @@ Bundle 'gmarik/vundle'
 
 " Other Bundles
 
+Bundle 'mattn/zencoding-vim'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
-" Bundle 'wincent/Command-T'
-Bundle 'git://git.wincent.com/command-t.git'
-" TODO: Finish installing command-t... maybe need to try pathogen
+Bundle 'FuzzyFinder'
 " TODO: Install snipMate
 " TODO: Get ctags working...
 "
@@ -67,7 +67,7 @@ nmap ; :
 nnoremap / /\v
 vnoremap / /\v
 
-
+nnoremap <C-t> :<C-u>FufFile **/<CR>
 
 
 
