@@ -23,6 +23,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
+
 " TODO: Install snipMate
 " TODO: Get ctags working...
 "
@@ -70,7 +72,9 @@ vnoremap / /\v
 " http://vim.1045645.n5.nabble.com/Help-with-map-for-FuzzyFinder-td1193515.html
 nnoremap <C-t> :<C-u>FufFile **/<CR>
 
-
+"Nerdtree shortcut
+let mapleader = ","
+nmap <leader>s :NERDTreeToggle<cr>
 
 filetype plugin indent on     " required for vundle
 set background=dark
