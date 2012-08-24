@@ -24,7 +24,9 @@ else
 fi
 
 # copy required bins and set permissions
-# mkdir -p ~/bin
-# cp bin/* ~/bin/
-# chmod +x ~/bin/git-current-branch
-# chmod +x ~/bin/git-cwd-info 
+mkdir -p ~/bin
+cp bin/* ~/bin/
+chmod +x ~/bin/git-current-branch
+chmod +x ~/bin/git-cwd-info 
+
+mkdir -p ~/.vim-tmp

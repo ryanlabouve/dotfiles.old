@@ -76,3 +76,6 @@ filetype plugin indent on     " required for vundle
 set background=dark
 colorscheme solarized
 
+" http://items.sjbach.com/319/configuring-vim-right
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
