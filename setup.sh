@@ -8,6 +8,8 @@ CURR_DIR=`pwd`
 echo "Setting $CURR_DIR/vimrc to ~/.test"
 ln -nfs $CURR_DIR/vimrc ~/.vimrc
 ln -fs $CURR_DIR/vim ~/.vim
+ln -nfs $CURR_DIR/zshrc ~/.zshrc
+ln -fs $CURR_DIR/zsh-modules ~/.zsh-modules
 
 echo `pwd`/vim
 # make terminal open zsh on login

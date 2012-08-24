@@ -1,0 +1,5 @@
+# Module: Aliases
+
+alias :q=exit
+
+alias ls='ls -AlG'
