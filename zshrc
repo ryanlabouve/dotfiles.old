@@ -23,8 +23,9 @@ ${smiley}  %{$reset_color%}'
 # RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/bin/git-cwd-info)%{$reset_color%}'
 
 # Replace the above with this if you use rbenv
-RPROMPT='%{$fg[white]%} $(~/.rbenv/bin/rbenv version-name)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
 
+# RPROMPT='%{$fg[white]%} $(~/.rbenv/bin/rbenv version-name)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
+RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info.rb)%{$reset_color%}'
 # Show completion on first TAB
 setopt menucomplete
 
@@ -32,3 +33,10 @@ setopt menucomplete
 autoload compinit
 compinit
 
+for file in ~/.zsh-modules/*; do
+  source $file
+done
+
+export PATH=/usr/local/bin:$PATH
+# rbenv doesn't work without this: http://stackoverflow.com/questions/10940736/rbenv-not-changing-ruby-version
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
