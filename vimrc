@@ -67,6 +67,7 @@ nmap ; :
 nnoremap / /\v
 vnoremap / /\v
 
+" http://vim.1045645.n5.nabble.com/Help-with-map-for-FuzzyFinder-td1193515.html
 nnoremap <C-t> :<C-u>FufFile **/<CR>
 
 
