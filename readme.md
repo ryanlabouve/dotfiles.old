@@ -1,7 +1,7 @@
 # ryanlabouve/dotfiles
 
 Goals:
-* Tell me what I haven't installed
+* Tell me what I havent installed
 * Make symbolic links to my vimrc and related file 
 * Fire up zsh when I open terminal
 * Manage the configuration for my Programming Environment
@@ -27,4 +27,20 @@ TODO: Customize
 
 ## ruby
 
+
+
 ## rails 
+
+
+- Currently, I suggest using rbenv instead of RVM
+  - Switching from RVM
+  - How rbenv works? https://gist.github.com/1384279
+
+- Homebrew
+  - what I brew?
+    - rbenv + ruby-build + ruby versions
+    - installing 1.9.2 or earlier: http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion
+  - getting ready to brew.
+ - Get ctags running
+    -gem install ctags (for exuberant ctags)
+See http://robots.thoughtbot.com/post/159805638/integrating-vim-into-your-life and rails.vim (https://github.com/tpope/vim-rails#readme) 

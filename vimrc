@@ -24,7 +24,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'msanders/snipmate.vim'
 " TODO: Install snipMate
 " TODO: Get ctags working...
 "
