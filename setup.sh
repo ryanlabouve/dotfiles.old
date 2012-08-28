@@ -30,3 +30,6 @@ chmod +x ~/bin/git-current-branch
 chmod +x ~/bin/git-cwd-info 
 
 mkdir -p ~/.vim-tmp
+# Git Stuff
+# http://news.ycombinator.com/item?id=4130494
+git config --global color.ui "auto"
