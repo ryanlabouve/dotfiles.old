@@ -36,7 +36,7 @@ compinit
 for file in ~/.zsh-modules/*; do
   source $file
 done
-
-export PATH=/usr/local/bin:$PATH
+# Note the addition of ~bin for the zsh prompt stuff to work
+export PATH=/usr/local/bin:~/bin:$PATH
 # rbenv doesn't work without this: http://stackoverflow.com/questions/10940736/rbenv-not-changing-ruby-version
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
