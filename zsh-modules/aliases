@@ -3,3 +3,9 @@
 alias :q=exit
 
 alias ls='ls -AlG'
+
+# git stuff
+alias gs="git status"
+alias lol="git log --graph --decorate --oneline"
+alias lola="git log --graph --decorate --oneline --all"
+
