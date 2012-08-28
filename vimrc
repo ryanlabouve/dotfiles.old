@@ -92,6 +92,10 @@ nnoremap <C-t> :<C-u>FufFile **/<CR>
 let mapleader = ","
 nmap <leader>s :NERDTreeToggle<cr>
 
+" Make changing windows better
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
 filetype plugin indent on     " required for vundle
 set background=dark
 colorscheme solarized
