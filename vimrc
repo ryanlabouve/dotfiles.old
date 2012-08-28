@@ -34,6 +34,9 @@ Bundle "honza/snipmate-snippets"
 Bundle 'garbas/vim-snipmate'
 
 " TODO: Get ctags working...
+"Ctags
+Bundle "vim-scripts/taglist.vim"
+
 Bundle "hallison/vim-markdown"
 
 " Syntax highlighting for markdown
