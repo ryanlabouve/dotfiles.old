@@ -36,6 +36,7 @@ Bundle 'garbas/vim-snipmate'
 " TODO: Get ctags working...
 "Ctags
 Bundle "vim-scripts/taglist.vim"
+set tags=tags;/
 
 Bundle "hallison/vim-markdown"
 

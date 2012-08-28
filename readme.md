@@ -44,3 +44,5 @@ TODO: Customize
  - Get ctags running
     -gem install ctags (for exuberant ctags)
 See http://robots.thoughtbot.com/post/159805638/integrating-vim-into-your-life and rails.vim (https://github.com/tpope/vim-rails#readme) 
+.... Installed ctags... don't really know what I'm doing with it yet. may have messed some things up.
+http://blog.bojica.com/2010/06/27/ctags-and-vim-for-ruby-on-rails-development
