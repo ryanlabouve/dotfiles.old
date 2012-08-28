@@ -34,6 +34,13 @@ Bundle "honza/snipmate-snippets"
 Bundle 'garbas/vim-snipmate'
 
 " TODO: Get ctags working...
+Bundle "hallison/vim-markdown"
+
+" Syntax highlighting for markdown
+au BufNewFile,BufRead *.md set filetype=markdown
+" http://learnvimscriptthehardway.stevelosh.com/chapters/44.html
+
+
 
 " vim-scripts repos
 Bundle 'L9'
@@ -89,3 +96,5 @@ colorscheme solarized
 " http://items.sjbach.com/319/configuring-vim-right
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+
