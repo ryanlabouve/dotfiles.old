@@ -8,6 +8,8 @@
 # RVM
 # if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # Colors
 autoload -U colors
 colors
@@ -24,8 +26,8 @@ ${smiley}  %{$reset_color%}'
 
 # Replace the above with this if you use rbenv
 
-# RPROMPT='%{$fg[white]%} $(~/.rbenv/bin/rbenv version-name)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
-RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info.rb)%{$reset_color%}'
+RPROMPT='%{$fg[white]%} $(~/.rbenv/bin/rbenv version-name)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
+# RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info.rb)%{$reset_color%}'
 # Show completion on first TAB
 setopt menucomplete
 
@@ -37,6 +39,5 @@ for file in ~/.zsh-modules/*; do
   source $file
 done
 # Note the addition of ~bin for the zsh prompt stuff to work
-export PATH=/usr/local/bin:~/bin:$PATH
+export PATH=./bin:/usr/local/bin:~/bin:$HOME/.rbenv/bin/:$PATH
 # rbenv doesn't work without this: http://stackoverflow.com/questions/10940736/rbenv-not-changing-ruby-version
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
