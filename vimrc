@@ -17,11 +17,12 @@ Bundle 'gmarik/vundle'
 " Other Bundles
 
 Bundle 'mattn/zencoding-vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'flazz/vim-colorschemes'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-markdown'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
 
@@ -38,7 +39,6 @@ Bundle 'garbas/vim-snipmate'
 Bundle "vim-scripts/taglist.vim"
 set tags=tags;/
 
-Bundle "hallison/vim-markdown"
 
 " Syntax highlighting for markdown
 au BufNewFile,BufRead *.md set filetype=markdown
@@ -99,7 +99,7 @@ map <C-L> <C-W>l
 
 filetype plugin indent on     " required for vundle
 set background=dark
-colorscheme solarized
+colorscheme desert256
 
 " http://items.sjbach.com/319/configuring-vim-right
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
