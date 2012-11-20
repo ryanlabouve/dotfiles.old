@@ -1,3 +1,4 @@
 *.swp
 *.DS_STORE
 vim/*
+zsh-modules/rsyncs
