@@ -43,3 +43,9 @@ done
 # Note the addition of ~bin for the zsh prompt stuff to work
 export PATH=./bin:/usr/local/bin:~/bin:$PATH
 # rbenv doesn't work without this: http://stackoverflow.com/questions/10940736/rbenv-not-changing-ruby-version
+
+function server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/"
+  python -m SimpleHTTPServer "$port"
+}
