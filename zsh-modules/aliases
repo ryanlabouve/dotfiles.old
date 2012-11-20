@@ -8,4 +8,3 @@ alias ls='ls -AlG'
 alias gs="git status"
 alias lol="git log --graph --decorate --oneline"
 alias lola="git log --graph --decorate --oneline --all"
-
