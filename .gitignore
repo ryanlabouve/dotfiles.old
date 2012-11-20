@@ -2,3 +2,4 @@
 *.DS_STORE
 vim/*
 zsh-modules/rsyncs
+zsh-modules/ssh-aliases
