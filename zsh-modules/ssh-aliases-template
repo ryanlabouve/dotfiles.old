@@ -1,0 +1,1 @@
+# alias [alias_name]="ssh [username]@[server_address] -p [port]"

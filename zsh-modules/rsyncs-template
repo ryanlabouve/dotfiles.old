@@ -1,0 +1,1 @@
+# alias sync_blogs="rsync -rvaz -e 'ssh -p [port num]' --progress  /Users/[username]/Dropbox/[uri] [username]@[server_address]:/[uri on server]"
