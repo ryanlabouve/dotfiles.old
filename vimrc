@@ -22,9 +22,10 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-markdown'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
+
+Bundle 'hallison/vim-markdown'
 
 "Dependencies for Snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"
