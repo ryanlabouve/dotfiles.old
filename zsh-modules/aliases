@@ -8,3 +8,8 @@ alias ls='ls -AlG'
 alias gs="git status"
 alias lol="git log --graph --decorate --oneline"
 alias lola="git log --graph --decorate --oneline --all"
+# Livereload helpers
+## add current dir to livereload watchlist
+alias lr-arm="open \"livereload:add?path=`pwd`\""
+## remove current dir from livereload watchlist
+alias lr-disarm="open \"livereload:?removepath=`pwd`\""
