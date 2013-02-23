@@ -1,9 +1,9 @@
 set nocompatible    "VIM no vi
 filetype off        "Required for vundle
 
-
 syntax on
 
+let mapleader = ","
 
 " Vundle stuff
 "
@@ -24,7 +24,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
-
 Bundle 'hallison/vim-markdown'
 
 "Dependencies for Snipmate
@@ -34,6 +33,19 @@ Bundle "honza/snipmate-snippets"
 
 "Snipmate
 Bundle 'garbas/vim-snipmate'
+
+" Tabular
+Bundle 'godlygeek/tabular'
+
+nmap <Leader>a= :Tab /=<CR>
+vmap <Leader>a= :Tab /=<CR>
+nmap <Leader>a# :Tab /\v#<CR>
+vmap <Leader>a# :Tab /\v#<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+
+
+" References: http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
 " TODO: Get ctags working...
 "Ctags
@@ -91,7 +103,6 @@ vnoremap / /\v
 nnoremap <C-t> :<C-u>FufFile **/<CR>
 
 "Nerdtree shortcut
-let mapleader = ","
 nmap <leader>s :NERDTreeToggle<cr>
 
 " Make changing windows better
