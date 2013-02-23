@@ -31,17 +31,35 @@ RPROMPT='%{$fg[white]%} $(cat ~/.rbenv/version)$(~/bin/git-cwd-info)%{$reset_col
 
 # RPROMPT='%{$fg[white]%} $(~/bin/git-cwd-info.rb)%{$reset_color%}'
 # Show completion on first TAB
-setopt menucomplete
+# setopt menucomplete
 
 # Load completions for Ruby, Git, etc.
 autoload compinit
 compinit
 
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+
+# auto correct commands
+setopt correctall
+
+# enable to don't have to type cd
+setopt autocd
+setopt auto_cd
+cdpath=($HOME/Dropbox)
+
+# extended globbing queries such as cp ^*.(tar|bz2|gz) work
+setopt extendedglob
+
 for file in ~/.zsh-modules/*; do
   source $file
 done
 # Note the addition of ~bin for the zsh prompt stuff to work
-export PATH=./bin:/usr/local/bin:~/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=~/bin:$PATH
+export PATH=./bin:$PATH
 # rbenv doesn't work without this: http://stackoverflow.com/questions/10940736/rbenv-not-changing-ruby-version
 
 function server() {
