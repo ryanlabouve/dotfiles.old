@@ -25,6 +25,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
 Bundle 'hallison/vim-markdown'
+Bundle 'Syntastic'
 
 "Dependencies for Snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"
