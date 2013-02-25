@@ -47,6 +47,10 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 
 " References: http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
+
+"Execute Ruby Code
+nmap <Leader>r G:read !ruby %<CR>
+
 " TODO: Get ctags working...
 "Ctags
 Bundle "vim-scripts/taglist.vim"
