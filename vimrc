@@ -5,6 +5,16 @@ syntax on
 
 let mapleader = ","
 
+"spellcheck on
+"  zg -- adds word to dictionary
+"  z= -- see suggestions
+set spell
+
+
+" Open in finder
+nmap <Leader>f :!open .<CR>
+vmap <Leader>f :!open .<CR>
+
 " Vundle stuff
 "
 
