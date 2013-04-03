@@ -5,11 +5,15 @@ syntax on
 
 let mapleader = ","
 
-"spellcheck on
+" spellcheck 
+"
+"  Off by default. Toggle on with Leader e.
+"
 "  zg -- adds word to dictionary
 "  z= -- see suggestions
-set spell
+"
 
+nmap <Leader>S :set spell!<CR>
 
 " Open in finder
 nmap <Leader>f :!open .<CR>
@@ -21,21 +25,24 @@ vmap <Leader>f :!open .<CR>
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-" Let Vundle manage Vundle (recuired)
+" Let Vundle manage Vundle (required)
 Bundle 'gmarik/vundle'
 
 " Other Bundles
 
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'mattn/zencoding-vim'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-surround'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
 Bundle 'hallison/vim-markdown'
-Bundle 'Syntastic'
+Bundle 'scrooloose/syntastic'
+Bundle 'groenewege/vim-less'
 
 "Dependencies for Snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -47,6 +54,21 @@ Bundle 'garbas/vim-snipmate'
 
 " Tabular
 Bundle 'godlygeek/tabular'
+
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
+" closetag.vim
+" <!-- I've temporarily put this scirpt in a dumb place -->
+let g:closetag_html_style=1
+source ~/Dropbox/dotfiles/vim/scripts/closetag.vim
+" autocmd Filetype html, xml, eruby 
+ 
+
+" vim-ruby goodness
+imap <C-e> <CR><CR>end<Esc>-cc
+imap <C-R> <C-X><C-O>
 
 nmap <Leader>a= :Tab /=<CR>
 vmap <Leader>a= :Tab /=<CR>
@@ -74,9 +96,6 @@ au BufNewFile,BufRead *.md set filetype=markdown
 
 
 
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
 
 " General
 set tabstop=2		" a tab is two spaces
