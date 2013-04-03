@@ -13,3 +13,7 @@ alias lola="git log --graph --decorate --oneline --all"
 alias lron='open "livereload:add?path=`pwd`"'
 ## remove current dir from livereload watchlist
 alias lroff='open "livereload:remove?path=`pwd`"'
+
+# bundler sanity
+alias be='bundle exec'
+alias ber='bundle exec rake'
